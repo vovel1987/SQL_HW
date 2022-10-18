@@ -1,0 +1,7 @@
+create table Goods(
+  id integer PRIMARY KEY,
+  title varchar(30),
+  quantity integer,
+  price numeric(8,2),
+  in_stock char(1) CHECK(in_stock in('Y','N'))
+)
